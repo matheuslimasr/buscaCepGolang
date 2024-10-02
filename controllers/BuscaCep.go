@@ -40,5 +40,5 @@ func HandlerBuscaCep(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusInternalServerError)
 	}
 
-	// nexts codes
+	json.NewEncoder(w).Encode(ViaCep)
 }
